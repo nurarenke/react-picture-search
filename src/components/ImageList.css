@@ -1,0 +1,13 @@
+.image-list {
+  display: grid;
+  /*grid css uses grid template columns automatically figures out how many columns to put in
+ with the autofill. minmax configures the minimum width*/
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 10px;
+  /*grid-auto-rows say how tall each of the diff rows  */
+  grid-auto-rows: 150px;
+}
+
+.image-list img {
+  width: 250px;
+}
